@@ -1,0 +1,164 @@
+/* Estilos generales */
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Encabezado */
+header {
+    background-color: #1e3a5e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Efecto de texto animado */
+header h1:hover {
+    animation: bounce 0.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Barra de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1e3a5e;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* Estilos para elementos específicos dentro de footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffc107;
+}
+
+footer button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+footer button:hover {
+    background-color: #0056b3;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;  /* Cambiar a blanco */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos para el texto dentro de la tarjeta de producto */
+.card-body {
+    color: #000;  /* Cambiar a negro */
+}
+
+/* Estilos para el contenedor principal con fondo gris claro */
+.container-mt-5 {
+    background-color: #f5f5f5;  /* Cambiar a un gris claro o color deseado */
+    padding: 20px;  /* Añadir espacio interno para mayor claridad visual */
+}
+
+/* Estilos para el texto del h2 dentro del contenedor principal */
+.container-mt-5 h2 {
+    color: #000;  /* Color negro para el texto del h2 */
+}
+
+/* Media query para pantallas grandes, como escritorios */
+@media screen and (min-width: 1024px) {
+    header h1 {
+        font-size: 42px;
+    }
+
+    .book {
+        margin: 30px;
+    }
+}
+
+.thumbnail {
+    width: 2cm;
+    height: 3cm;
+    object-fit: cover; /* Ajustar la imagen dentro del tamaño especificado */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
